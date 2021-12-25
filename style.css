@@ -1,0 +1,27 @@
+
+body{
+      background-image: url(background.jpg);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .bg{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  table{
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+  }
+  thead{
+    background-color: lightsteelblue;
+  }
+  tbody{
+    background-color: lightblue;
+  }
+  .table-bordered, td{
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+  }
