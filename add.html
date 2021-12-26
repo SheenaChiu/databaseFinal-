@@ -74,7 +74,7 @@
           <a class="nav-link" href="#">飲品介紹</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">分店介紹</a>
+          <a class="nav-link" href="store.html">分店介紹</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">店長介紹</a>
@@ -95,18 +95,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><input type="text" class="container-fluid" id="storeName" placeholder="輸入分店名稱" name="storeName"></td>
-            <td><input type="text" class="container-fluid" id="managerName" placeholder="輸入店長名稱" name="storeName"></td>
-            <td><input type="text" class="container-fluid" id="storeAddress" placeholder="輸入分店地址" name="storeName"></td>
-            <td><input type="text" class="container-fluid" id="storePhone" placeholder="輸入分店電話" name="storeName"></td>
-          </tr>
+	  <form action="http://localhost/insert_store.php" method="post">
+	    <tr>
+            	<td><input type="text" class="container-fluid" id="storeName" placeholder="輸入分店名稱" name="storeName"></td>
+          	<td><input type="text" class="container-fluid" id="managerName" placeholder="輸入店長名稱" name="managerName"></td>
+          	<td><input type="text" class="container-fluid" id="storeAddress" placeholder="輸入分店地址" name="storeAddress"></td>
+           	<td><input type="text" class="container-fluid" id="storePhone" placeholder="輸入分店電話" name="storePhone"></td>
+            </tr>
+	    <tfoot>
+              <td colspan="4">
+                <button type="submit" class="btn btn-primary float-right">新增</button>
+              </td>
+            </tfoot>
+	  </form>
         </tbody>
-        <tfoot>
-          <td colspan="4">
-            <button type="submit" class="btn btn-primary float-right">新增</button>
-          </td>
-        </tfoot>
       </table>
 
       <!--add employee-->
