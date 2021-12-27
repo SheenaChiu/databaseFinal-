@@ -19,15 +19,17 @@
     <div class="container p-3 my-3 border border-warning rounded bg">          
       <h1 class = "text-center p-3 ">分店列表</h1>
       <form class="form-inline row">
-        <div class="form-group col-sm-4">
+        <div class="form-group col-sm-10">
+	  <form action="store_inform.php" method="post">
           <input type="text" class="form-control" id="storeName" placeholder="搜尋分店名稱" name="storeName">
-                <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='store_inform.php'"></input>
-        </div>
-        <div class="form-group col-sm-4" >
+          <button type="submit" class="btn btn-primary">搜尋</button>
+	  </form>
+
+          <form action="store_delete.php" method="post">
           <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
-                <input type ="button" class="btn btn-primary" value="刪除" onclick="location.href='store_delete.php'"></input>
-        </div>
-        <div class="col-sm-4 float-right ">
+          <button type="submit" class="btn btn-primary">刪除</button>
+	  </form>
+
           <input type ="button" class="btn btn-primary" value="新增點我" onclick="location.href='add.php'"></input>
           <input type ="button" class="btn btn-primary float-right" value="修改點我" onclick="location.href='update.php'"></input>
         </div>
