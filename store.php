@@ -19,21 +19,21 @@
     <div class="container p-3 my-3 border border-warning rounded bg">          
       <h1 class = "text-center p-3 ">分店列表</h1>
       <form class="form-inline row">
-        <div class="form-group col-sm-10">
-	  <form action="store_inform.php" method="post">
-          <input type="text" class="form-control" id="storeName" placeholder="搜尋分店名稱" name="storeName">
-          <button type="submit" class="btn btn-primary">搜尋</button>
-	  </form>
-
-          <form action="store_delete.php" method="post">
-          <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
-          <button type="submit" class="btn btn-primary">刪除</button>
-	  </form>
-
+        <div class="form-group col-sm-12">
+          <form class="form-group col-sm-4" action="store_inform.php" method="post">
+            <input type="text" class="form-control" id="storeName" placeholder="搜尋分店名稱" name="storeName">
+            <button type="submit" class="btn btn-primary">搜尋</button>
+          </form>
+          <form class="form-group col-sm-4" action="store_delete.php" method="post">
+            <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
+            <button type="submit" class="btn btn-primary">刪除</button>
+        </form>
+        <div class="col-sm-4 float-right">
           <input type ="button" class="btn btn-primary" value="新增點我" onclick="location.href='add.php'"></input>
           <input type ="button" class="btn btn-primary float-right" value="修改點我" onclick="location.href='update.php'"></input>
         </div>
-      </form>
+      </div>
+    </form>
       <br>
       <!--data-->
       <?php
@@ -58,7 +58,7 @@
           echo "<td>".$result[$i]['managerID']."</td>";
           echo "<td>".$result[$i]['storeAddress']."</td>";
           echo "<td>".$result[$i]['storePhone']."</td>";
-          echo "</tr>.";
+          echo "</tr>";
         }
         echo "</table>";
       ?>
