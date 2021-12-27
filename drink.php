@@ -22,14 +22,14 @@
             <h1 class = "text-center p-3 ">飲品列表</h1>
             <div class="form-inline row">
                 <div class="form-group col-sm-6">
-                    <form action="store_inform.php" method="post">
+                    <form action="drink_inform.php" method="post">
                         <input type="text" class="form-control" id="productName" placeholder="搜尋飲品名稱" name="productName">
                         <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
                         <button type="submit" class="btn btn-primary">搜尋</button>
                     </form>
                 </div>
                 <div class="form-group col-sm-6">
-                    <form action="store_delete.php" method="post">
+                    <form action="drink_delete.php" method="post">
                         <input type="text" class="form-control" id="productName" placeholder="輸入飲品名稱" name="productName">
                         <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
                         <button type="submit" class="btn btn-primary">刪除</button>
