@@ -21,11 +21,11 @@
       <form class="form-inline row">
         <div class="form-group col-sm-4">
           <input type="text" class="form-control" id="storeName" placeholder="搜尋分店名稱" name="storeName">
-                <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='????.php'"></input>
+                <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='store_inform.php'"></input>
         </div>
         <div class="form-group col-sm-4" >
           <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
-                <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='????.php'"></input>
+                <input type ="button" class="btn btn-primary" value="刪除" onclick="location.href='store_delete.php'"></input>
         </div>
         <div class="col-sm-4 float-right ">
           <input type ="button" class="btn btn-primary" value="新增點我" onclick="location.href='add.php'"></input>

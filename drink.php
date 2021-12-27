@@ -22,11 +22,11 @@
             <form class="form-inline row">
                 <div class="form-group col-sm-4">
                     <input type="text" class="form-control" id="drinkName" placeholder="搜尋飲品名稱" name="drinkName">
-                    <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='????.php'"></input>
+                    <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='drink_inform.php'"></input>
                 </div>
                 <div class="form-group col-sm-4" >
                     <input type="text" class="form-control" id="drinkName" placeholder="輸入飲品名稱" name="drinkName">
-                    <input type ="button" class="btn btn-primary" value="搜尋" onclick="location.href='????.php'"></input>
+                    <input type ="button" class="btn btn-primary" value="刪除" onclick="location.href='drink_delete.php'"></input>
                 </div>
                 <div class="col-sm-4 float-right ">
                     <input type ="button" class="btn btn-primary" value="新增點我" onclick="location.href='add.php'"></input>
