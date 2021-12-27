@@ -1,3 +1,4 @@
+   
 <!DOCTYPE html>
 <?php
     include "condb.php";
@@ -19,24 +20,27 @@
         <!--content-->
         <div class="container p-3 my-3 border border-warning rounded bg">          
             <h1 class = "text-center p-3 ">飲品列表</h1>
-            <form class="form-inline row">
-                <div class="form-group col-sm-18">
-	 	  <form action="store_inform.php" method="post">
-                     <input type="text" class="form-control" id="productName" placeholder="搜尋飲品名稱" name="productName">
-		     <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
-                     <button type="submit" class="btn btn-primary">搜尋</button>
-	          </form>
-
-                  <form action="store_delete.php" method="post">
-                    <input type="text" class="form-control" id="productName" placeholder="輸入飲品名稱" name="productName">
-		    <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
-                    <button type="submit" class="btn btn-primary">刪除</button>
-	          </form>
-
-                  <input type ="button" class="btn btn-primary" value="新增點我" onclick="location.href='add.php'"></input>
-                  <input type ="button" class="btn btn-primary float-right" value="修改點我" onclick="location.href='update.php'"></input>
+            <div class="form-inline row">
+                <div class="form-group col-sm-6">
+                    <form action="store_inform.php" method="post">
+                        <input type="text" class="form-control" id="productName" placeholder="搜尋飲品名稱" name="productName">
+                        <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
+                        <button type="submit" class="btn btn-primary">搜尋</button>
+                    </form>
                 </div>
-            </form>
+                <div class="form-group col-sm-6">
+                    <form action="store_delete.php" method="post">
+                        <input type="text" class="form-control" id="productName" placeholder="輸入飲品名稱" name="productName">
+                        <input type="text" class="form-control" id="storeName" placeholder="輸入分店名稱" name="storeName">
+                        <button type="submit" class="btn btn-primary">刪除</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div >
+                <input type ="button" class="btn btn-primary" value="新增點我" onclick="location.href='add.php'"></input>
+                <input type ="button" class="btn btn-primary" value="修改點我" onclick="location.href='update.php'"></input>
+            </div>
             <br>
             <!--data-->
             <?php
@@ -61,7 +65,7 @@
                 echo "<td>".$result[$i]['storeName']."</td>";
                 echo "<td>".$result[$i]['price']."</td>";
                 echo "<td>".$result[$i]['sale']."</td>";
-                echo "</tr>.";
+                echo "</tr>";
             }
             echo "</table>";
             ?>
